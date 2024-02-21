@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nativeaot-llvm-example", "nativeaot-llvm-example.csproj", "{298AB1B6-E61B-45E0-AD52-5B52BDC5CB07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{298AB1B6-E61B-45E0-AD52-5B52BDC5CB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298AB1B6-E61B-45E0-AD52-5B52BDC5CB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298AB1B6-E61B-45E0-AD52-5B52BDC5CB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298AB1B6-E61B-45E0-AD52-5B52BDC5CB07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1FBDC42-653F-4324-B79D-7F7D6CF2FF34}
+	EndGlobalSection
+EndGlobal

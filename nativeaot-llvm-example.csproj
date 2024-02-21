@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PublishTrimmed>true</PublishTrimmed>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <IlcDisableReflection>true</IlcDisableReflection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.ILCompiler.LLVM; runtime.win-x64.Microsoft.DotNet.ILCompiler.LLVM" Version="9.0.0-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DirectPInvoke Include="lib" />
+    <NativeLibrary Include="lib.o" />
+  </ItemGroup>
+
+  <Target Name="CompileNativeLibrary" BeforeTargets="BeforeBuild">
+    <Exec Command="emcc -c lib.c -O2 -o lib.o" />
+  </Target>
+
+</Project>
